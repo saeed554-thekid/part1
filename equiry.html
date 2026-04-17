@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equiry</title>
+    <title>Equiry Form</title>
+    
+  
 </head>
-<body>
+<body >
+    <header><h1>Enquiry Form</h1></header>
     <header>
         <nav>
             <ul>
@@ -13,9 +16,18 @@
             <li><a href="about.html">About Us</a></li> 
             <li><a href="contact.html">Contact Information</a></li> 
             <li><a href="products.html">Products</a></li> 
-            <li><a href="equiry.html">Equiry</a></li>
+            <li><a href="equiry.html">Equiry Form</a></li>
             </ul> 
         </nav>
+        <!--This is where the customers fill in their equiry-->
+        <div class="form-container">
+            <h2 >Make an Equiry</h2>
+            <form action="#" method="post"></form><br><br>
+            <input type="text" name="name" placeholder="Customers Name" required><br><br>
+            <input type="email" name="email" placeholder="Customers Email" required><br><br>
+            <textarea name="message" rows="5" placeholder="Customers Enquiry" required></textarea><br><br>
+            <button type="submit">submit</button>
+        </div>
     </header>
     
 </body>

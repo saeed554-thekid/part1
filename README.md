@@ -29,3 +29,11 @@ Time and Milestones
 •	Week 2: HTML structure pages (Due 20 April 2026)
 •	Week 3: Apply ccs styling to improve colour layouts and more design (Due 29 May 2026)
 •	May/ June/ July: Adding java script features
+
+References
+
+•	SME South Africa (2023). Bakers Creationz: Baking Dreams into Reality: https://smesouthafrica.co.za/bakers-creationz-baking-dreams-into-reality/
+•	Georges Bakery: https://gbco.co.za/our%20story/ , took inspiration from their about
+•	The Sweet Sliced Bakery: https://www.thesweetslicebakery.co.za/our-story took inspiration from their about
+•	Ai generating Logo: https://www.design.com/s/logo?var=ai-logo-generator-dcom&code=25OFFSEM&utm_medium=cpc&utm_source=google&utm_campaign=africa_generic_logo_ai_max&utm_adgroup=logos&utm_content=769431353646&utm_keyword=logo+generator&utm_network=g&gad_source=1&gad_campaignid=20838923220&gbraid=0AAAAADwF9LBoKFdc-X6AxDo--sC3ljZsd&gclid=CjwKCAjwtIfPBhAzEiwAv9RTJlpZ-XA8hWL3QYObRUZWOcgt_O-sfVwkRlA0zSjPDpWoRatnkY-_uBoCjcAQAvD_BwE, used to create the Idi Delights Logo
+•	Took inspiration form other business from Tok Tik and Instagram

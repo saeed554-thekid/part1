@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equiry Form</title>
-    
+    <title>Equiry</title>
+    <link rel="stylesheet" href="style.css">
   
 </head>
 <body >
-    <header><h1>Enquiry Form</h1></header>
+    <header>
+        <div class="logo">
+            <img src="images/idi deletes.PNG" alt="Idi Delites Logo">
+            <h1>Idi Delites</h1>
+        </div>
+    </header>
+
     <header>
         <nav>
             <ul>
@@ -19,15 +25,26 @@
             <li><a href="equiry.html">Equiry Form</a></li>
             </ul> 
         </nav>
-        <!--This is where the customers fill in their equiry-->
-        <div class="form-container">
-            <h2 >Make an Equiry</h2>
-            <form action="#" method="post"></form><br><br>
-            <input type="text" name="name" placeholder="Customers Name" required><br><br>
-            <input type="email" name="email" placeholder="Customers Email" required><br><br>
-            <textarea name="message" rows="5" placeholder="Customers Enquiry" required></textarea><br><br>
-            <button type="submit">submit</button>
-        </div>
+
+         <!---Page Banner-->
+         <div class="page-banner">
+            <h2>Customer Enquiry</h2>
+         </div>
+
+        <!--Enquiry Form-->
+        <section class="enquiry-container">
+            <form>
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Product Name">
+                <textarea placeholder="Type Your Enquiry"></textarea>
+                <button type="submit">Submit Enquiry</button>
+            </form>
+        </section>
+
+        <!--Footer-->
+        <footer>&copy; 2025 Idi Delites Website. All Rights Reserved</footer>
+        
     </header>
     
 </body>

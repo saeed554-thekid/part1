@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-   <head>
+    <link rel="stylesheet" href="style.css">
+   
+    <head>
 </head>
 <body>
-    <!--The business name-->
-    <header><h1>Idi Delites</h1></header>
+    
+    <header>
+         <div class="logo">
+            <img src="images/idi deletes.PNG" alt="Idi Delites Logo">
+            <h1>Idi Delites</h1>
+        </div>
+    </header>
     <!--This is the navigation part of the website-->
 <nav>
         <ul>
@@ -19,8 +26,49 @@
         <li><a href="equiry.html">Equiry Form</a></li> 
         </ul>
     </nav>
-    <!--logo of the business-->
-    <img src="images/idi deletes.PNG">
+
+    <!--Hero section-->
+    <div class="hero">
+        <div class="hero-text">
+            <h2>Freshly Baked Sweet Treats</h2>
+            <p>Delicious cakes, cupcakes,pastrries and baked goods made with love</p>
+
+        <a href="products.html" class="btn">
+            View Products
+        </a>
+
+        </div>
+    </div>
+
+    <!--Featured Products-->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="products-container">
+            <div class="product-card">
+                <img src="images/Chocolate-Cake.webp" alt="Chocolate cakes">
+                <h3>Chocolate cake</h3>
+                <p>Rich flavor chocolate cake perfect for birthdays and events</p>
+                <button>Order Now</button><br><br>
+
+            </div>
+            
+            <div class="product-card">
+                <img src="images/download.jpg" alt="Cupcakes">
+                <h3> Vanilla Cupcakes</h3>
+                <p>Soft vanilla cupcakes topped with creamy frosting</p>
+                <button>Order Now</button><br><br>
+              </div>
+
+              <div class="product-card">
+                <img src="images/doughnuts-donuts.webp" alt="Donuts">
+                <h3>Fresh Donuts</h3>
+                <p>Sweet freshly baked Donuts</p>
+                <button>Order Now</button>
+              </div>
+            
+        </div>
+    </section>
+    
 
 <main>
     <!--Different sections of the website-->
@@ -30,7 +78,7 @@
     </section>
     <section id="about">
         <h2>About Section</h2>
-        <p>Information about the bsuiness</p>
+        <p>Information about the business</p>
     </section>
     <section id="contact">
         <h2>Contact Section</h2>

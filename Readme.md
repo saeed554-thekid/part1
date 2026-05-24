@@ -37,3 +37,6 @@ References
 •	The Sweet Sliced Bakery: https://www.thesweetslicebakery.co.za/our-story took inspiration from their about
 •	Ai generating Logo: https://www.design.com/s/logo?var=ai-logo-generator-dcom&code=25OFFSEM&utm_medium=cpc&utm_source=google&utm_campaign=africa_generic_logo_ai_max&utm_adgroup=logos&utm_content=769431353646&utm_keyword=logo+generator&utm_network=g&gad_source=1&gad_campaignid=20838923220&gbraid=0AAAAADwF9LBoKFdc-X6AxDo--sC3ljZsd&gclid=CjwKCAjwtIfPBhAzEiwAv9RTJlpZ-XA8hWL3QYObRUZWOcgt_O-sfVwkRlA0zSjPDpWoRatnkY-_uBoCjcAQAvD_BwE, used to create the Idi Delights Logo
 •	Took inspiration form other business from Tok Tik and Instagram
+Used div elements by replacing most of thing  with div
+Added a action button for the ordering button.
+Added a few new images sch as the cake and donut images 

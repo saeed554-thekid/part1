@@ -232,6 +232,13 @@ nav ul li a:hover{
     border: none;
 }
 
+/*Footer*/
+footer{
+    background-color: #5c3d2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
 
 

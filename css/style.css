@@ -282,9 +282,13 @@ footer{
 }
 
 /*Responsive Dessign*/
-@media (max-width:768px){
+/*Tablets*/
+@media screen and  (max-width:768px){
     header{
         flex-direction: column;
+    }
+    .products-container, .products-page{
+        grid-template-columns: repeat(2, 1fr);
     }
     
     nav ul{
@@ -296,5 +300,19 @@ footer{
         font-size: 30px;
     }
 }
-
-    
+/*Mobile*/
+@media screen and (max-width: 480px){
+    .products-container, .products-page{
+        grid-template-columns:1fr;
+    }
+    .hero-text h2{
+        font-size: 24px;
+    }
+    .hero-text p{
+        font-size: 16px;
+    }
+    .btn{
+        display: block;
+        width: 100%;
+}
+}

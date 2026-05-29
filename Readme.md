@@ -39,4 +39,10 @@ References
 •	Took inspiration form other business from Tok Tik and Instagram
 Used div elements by replacing most of thing  with div
 Added a action button for the ordering button.
-Added a few new images sch as the cake and donut images 
+Added a few new images such as the cake and donut images 
+
+Added a color palette to the word document under the design heading.
+Have a css/style.css  to add color and design .
+added a highlight color for nav when the arrow is on one of the navigation pages.
+Added a mission plan in my about.html page
+Created a wireframe on the web assignment document.

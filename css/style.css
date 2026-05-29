@@ -120,7 +120,8 @@ main{
 }
 
 .products-container, .products-page{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 12px;
     flex-wrap: nowrap;
@@ -230,6 +231,13 @@ main{
     background-color: #5c3d2e;
     color: white;
     border: none;
+}
+.contact-form button:hover{
+    background-color: #ffd166;
+    color: #333;
+}
+.contact-form button:active{
+    transform: scale(0.98);
 }
 
 /*Enqiry Form*/

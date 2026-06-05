@@ -37,13 +37,14 @@ header{
 nav{
     background-color: #4e342e;
     width: 100%;
-    padding: 15px;
+    padding: 15px 0;
 }
 nav ul{
     list-style: none;
     display: flex;
     gap:20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 nav ul li a{
     color: #F4A6B8;
@@ -55,12 +56,65 @@ nav ul li a{
 nav ul li a:hover{
     color: #F4A68B;
 }
+.nav-toggle{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    position: relative;
+}
+.nav-toggle span{
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin: 6px 0;
+    background-color: #F4A6B8;
+    border-radius: 4px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.main-nav{
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.main-nav.active{
+    max-height: 400px;
+}
 .page-banner{
     padding: 28px 20px;
     margin-top: 8px;
     margin-bottom: 20px;
     text-align: center;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    header{
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .main-nav{
+        max-height: 0;
+    }
+    .main-nav.active{
+        max-height: 320px;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 0;
+    }
+    nav ul li a{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 main{
@@ -319,4 +373,34 @@ footer{
         display: block;
         width: 100%;
 }
+}
+
+.fade-in{
+     opacity: 0;
+     transform: translateY(30px);
+     transition: all 0.8s ease;
+}
+
+.fade-in.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.missio-hover{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.mission-hover:hover{
+    transform:translateY(-10px);
+}
+
+#SearchInput{
+    width: 80%;
+    max-width:400px;
+    padding: 12px;
+    display:block;
+    margin:20px auto;
+    border:2px solid #c68e17;
+    border-radius:5px;
 }

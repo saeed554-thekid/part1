@@ -49,3 +49,22 @@ Created a wireframe on the web assignment document.
 
 
 added a nav
+
+
+Part 3 Readme part
+JavaScript Enhancements
+
+This site includes a number of interactive improvements:
+
+* A live product search filters cards as the user types, making it easy to find items.
+* The order buttons respond to clicks with a confirmation message.
+* Contact and enquiry forms validate user input before submission and show inline messages for errors, loading status, and success.
+* Form submission is simulated asynchronously, giving the user a smoother experience without a page reload.
+* Name fields only allow letters and spaces, phone fields allow digits and common phone characters, and product fields are restricted to letters and spaces.
+* Message fields prevent numbers from being entered, and both forms allow only valid details to be submitted.
+* Mission cards have click interactions with feedback to keep the page engaging.
+* Content fades in as it scrolls into view, adding a polished visual effect.
+* The mobile navigation menu opens and closes cleanly with the toggle button.
+* A welcome message is added dynamically to the hero section, and the sliding banner text stays positioned below the header while scrolling.
+* The gallery includes a lightbox so users can view larger images, navigate between them, and close the overlay by clicking outside or pressing Escape.
+* Product cards are generated dynamically from a data source, and order button behavior is applied automatically to those generated cards.

@@ -32,6 +32,11 @@ All notable changes for the Idi Delites website project.
 - Added `robots.txt` to manage crawler access.
 - Added `sitemap.xml` to help search engines understand site structure.
 
+### Bug fixes and security
+- Fixed bugs related to product card rendering and removed obsolete Century City map support.
+- Added safer DOM creation for dynamic product and location content to reduce the risk of injection.
+- Added Content Security Policy metadata across pages and improved form validation and error feedback.
+
 ### Notes
 - The changelog captures the main front-end improvements made during this project.
 - This file is intended to summarize updates across HTML, CSS, and JavaScript work.

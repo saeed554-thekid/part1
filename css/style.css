@@ -750,36 +750,6 @@ overflow:hidden;
     color: #4e342e;
 }
 
-.map-controls {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 30px;
-    justify-content: center;
-}
-
-.map-btn {
-    padding: 12px 30px;
-    background-color: #e8d5c4;
-    color: #4e342e;
-    border: 2px solid #4e342e;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    font-size: 1rem;
-}
-
-.map-btn:hover {
-    background-color: #f4a6b8;
-    color: white;
-    transform: translateY(-2px);
-}
-
-.map-btn.active {
-    background-color: #f4a6b8;
-    color: white;
-}
-
 .maps-container {
     display: flex;
     justify-content: center;
@@ -825,16 +795,6 @@ overflow:hidden;
 
 /* Responsive Maps */
 @media (max-width: 768px) {
-    .map-controls {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .map-btn {
-        flex: 1;
-        min-width: 150px;
-    }
-
     .maps-container {
         flex-direction: column;
     }

@@ -14,17 +14,28 @@
             <img src="images/idi deletes.PNG" alt="Idi Delites Logo">
             <h1>Idi Delites</h1>
         </div>
-        <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav">
             <ul>
-            <li><a href="index.html">Home</a></li> 
-            <li><a href="about.html">About Us</a></li> 
-            <li><a href="contact.html">Contact Information</a></li> 
-            <li><a href="products.html">Products</a></li> 
-            <li><a href="equiry.html">Equiry</a></li>
-            </ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Information</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="equiry.html">Equiry</a></li>
+            </ul>
         </nav>
+    </header>
 
-<!--About banner-->
+    <!--Welcome banner (shared) -->
+    <div id="welcomeBanner">
+        <span class="welcome-text">welcome to the Idi Delites Website</span>
+    </div>
+
+    <!--About banner-->
         <div class="page-banner">
             <h2>About Us</h2>
         </div>
@@ -44,12 +55,12 @@
 
         <!---Mission statement-->
         <section class="mission-section">
-            <div class="mission-card">
+            <div class="mission-card mission-hover">
                 <h2>Our Mission</h2>
                 <p>To provide high quality baked products with the excellent service.</p><br><br>
             </div>
 
-            <div class="mission-card">
+            <div class="mission-card mission-hover">
                 <h2>Our Vision</h2>
                 <p>To become one of the leading bakery businesses in South Africa.</p><br><br>
             </div>
@@ -60,5 +71,17 @@
             <p>&copy; 2023 Idi Delites. All rights reserved.</p>
         </footer>
     </main>
+
+<section class="about-container"></section>
+
+<section class="about-container fade-in"></section>
+
+<section class="mission-section"></section>
+
+<section class="mission-section fade-in"></section>
+
+<script src="js/script.js"></script>
+
+
 </body>
 </html>

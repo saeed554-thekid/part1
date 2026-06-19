@@ -46,3 +46,6 @@ Have a css/style.css  to add color and design .
 added a highlight color for nav when the arrow is on one of the navigation pages.
 Added a mission plan in my about.html page
 Created a wireframe on the web assignment document.
+
+
+added a nav

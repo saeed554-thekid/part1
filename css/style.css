@@ -18,70 +18,122 @@ body {
 header{
     background-color: #4e342e;
     color: white;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    flex-wrap: wrap;
-    gap: 12px;
+    padding: 10px 20px;
+    flex-wrap: nowrap;
+    gap: 20px;
+    position: relative;
 }
 .logo{
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.logo img{
+    width: 110px; /* bigger logo */
+    height: auto;
+    display: block;
+    border-radius: 6px;
 }
 .logo h1{
-    font-size: 30px;
+    font-size: 1.75rem;
+    margin: 0;
+    padding: 0 8px;
+    white-space: nowrap;
 }
 /*Navigation*/
 nav{
-    background-color: #4e342e;
-    width: 100%;
-    padding: 15px 0;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
 }
+
 nav ul{
     list-style: none;
     display: flex;
-    gap:20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 18px;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 nav ul li a{
     color: #F4A6B8;
     text-decoration: none;
-    font-weight: bold;
-    padding: 8px 10px;
+    font-weight: 700;
+    padding: 10px 14px;
     border-radius: 6px;
+    font-size: 1.05rem;
+    white-space: nowrap;
 }
 nav ul li a:hover{
     color: #F4A68B;
 }
 .nav-toggle{
-    display: none;
-    background: none;
-    border: none;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(244, 166, 184, 0.6);
+    border-radius: 10px;
     cursor: pointer;
-    padding: 10px;
-    width: 44px;
-    height: 44px;
+    padding: 8px;
+    width: 46px;
+    height: 46px;
     position: relative;
+    z-index: 5;
+    flex-shrink: 0;
 }
 .nav-toggle span{
     display: block;
-    width: 100%;
-    height: 4px;
-    margin: 6px 0;
+    width: 28px;
+    height: 5px;
+    margin: 4px 0;
     background-color: #F4A6B8;
     border-radius: 4px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
+.nav-toggle:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+.nav-toggle.open span:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+}
+.nav-toggle.open span:nth-child(2){
+    opacity: 0;
+}
+.nav-toggle.open span:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
+}
+.nav-toggle.open span:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+}
+.nav-toggle.open span:nth-child(2){
+    opacity: 0;
+}
+.nav-toggle.open span:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
+}
 .main-nav{
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: transform 0.3s ease, max-height 0.3s ease, opacity 0.3s ease;
+    display: none;
+    max-height: 0;
+    opacity: 0;
 }
 .main-nav.active{
+    display: block;
     max-height: 400px;
+    transform: none;
+    opacity: 1;
 }
+
 .page-banner{
     padding: 28px 20px;
     margin-top: 8px;
@@ -90,20 +142,51 @@ nav ul li a:hover{
     width: 100%;
 }
 
+#welcomeBanner{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #000 !important; /* full-width pure black */
+    color: #fff !important;
+    opacity: 1;
+    padding: 6px 0;
+    z-index: 9999; /* ensure it sits above other content */
+    overflow: hidden;
+}
+
+#welcomeBanner .welcome-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    white-space: nowrap;
+    color: white;
+    padding: 0 16px;
+    font-size: 1rem;
+}
+
 @media (max-width: 768px) {
     header{
         justify-content: space-between;
         align-items: center;
         gap: 10px;
+        flex-wrap: nowrap;
     }
     .nav-toggle{
         display: block;
     }
     .main-nav{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
         max-height: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease, max-height 0.3s ease;
     }
     .main-nav.active{
         max-height: 320px;
+        transform: translateX(0);
     }
     nav ul{
         flex-direction: column;
@@ -298,6 +381,43 @@ main{
     transform: scale(0.98);
 }
 
+/* Contact Form Styling - Match Enquiry Form */
+.contactForm{
+    background-color: white;
+    width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm input, .contactForm textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+
+.contactForm button{
+    width: 100%;
+    padding: 12px;
+    background-color: #f4a6b8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contactForm button:hover{
+    background-color: #e88ba0;
+}
+
+.contactForm button:active{
+    transform: scale(0.98);
+}
+
 /*Enqiry Form*/
 .enquiry-container{
     display: flex;
@@ -414,4 +534,49 @@ padding:15px;
 position: relative;
 white-space: nowrap;
 overflow:hidden;
+}
+
+@media (min-width: 769px) {
+    /* ensure desktop shows nav inline */
+    .main-nav{
+        position: static;
+        transform: none;
+        max-height: 0;
+        display: none;
+    }
+    .main-nav.active{
+        display: block;
+        max-height: none;
+    }
+    nav ul{
+        flex-direction: row;
+    }
+}
+
+.nav-toggle{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(244, 166, 184, 0.6);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px;
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    min-height: 46px;
+}
+.nav-toggle::before{
+    content: "⋯";
+    display: inline-block;
+    font-size: 32px;
+    color: #F4A6B8;
+    line-height: 1;
+}
+.nav-toggle.open::before{
+    content: "✕";
+}
+.nav-toggle span{
+    display: none !important;
 }

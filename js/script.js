@@ -398,13 +398,28 @@ function displayDynamicProducts(products) {
     products.forEach(product => {
         const productCard = document.createElement('div');
         productCard.className = 'product-card';
-        productCard.innerHTML = `
-            <img src="${product.image}" alt="${product.name}" loading="lazy">
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
-            <h4>${product.price}</h4>
-            <button class="orderBtn" data-product="${product.name}">Order Now</button>
-        `;
+
+        const productImage = document.createElement('img');
+        productImage.src = product.image;
+        productImage.alt = product.name;
+        productImage.loading = 'lazy';
+
+        const title = document.createElement('h3');
+        title.textContent = product.name;
+
+        const description = document.createElement('p');
+        description.textContent = product.description;
+
+        const priceTag = document.createElement('h4');
+        priceTag.textContent = product.price;
+
+        const orderButton = document.createElement('button');
+        orderButton.className = 'orderBtn';
+        orderButton.type = 'button';
+        orderButton.dataset.product = product.name;
+        orderButton.textContent = 'Order Now';
+
+        productCard.append(productImage, title, description, priceTag, orderButton);
         productsSection.appendChild(productCard);
     });
 

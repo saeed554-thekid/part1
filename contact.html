@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src https://www.google.com; font-src 'self'; connect-src 'self';">
     <title>Contact Information</title>
   <link rel="stylesheet" href="css/style.css">
          
@@ -50,11 +51,11 @@
   </div>
    
       <div class="contactForm">
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Enter Your Name">
-            <input type="email" id="email" placeholder="Enter Your Email">
-            <input type="tel" id="phone" placeholder="Enter Your Phone Number">
-            <textarea id="message" placeholder="Enter Your Message"></textarea>
+        <form id="contactForm" autocomplete="on">
+            <input type="text" id="name" placeholder="Enter Your Name" autocomplete="name" required>
+            <input type="email" id="email" placeholder="Enter Your Email" autocomplete="email" required>
+            <input type="tel" id="phone" placeholder="Enter Your Phone Number" autocomplete="tel" required>
+            <textarea id="message" placeholder="Enter Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
       </div>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src https://www.google.com; font-src 'self'; connect-src 'self';">
     <title>Equiry</title>
     <link rel="stylesheet" href="css/style.css">
   
@@ -41,12 +42,12 @@
 
     <!--Enquiry Form-->
     <section class="enquiry-container">
-        <form id="enquiryForm">
-            <input type="text" id="name" placeholder="Full Name">
-            <input type="email" id="email" placeholder="Email Address">
-            <input type="tel" id="phone" placeholder="Phone Number">
-            <input type="text" id="product" placeholder="Product Name">
-            <textarea id="message" placeholder="Type Your Enquiry"></textarea>
+        <form id="enquiryForm" autocomplete="on">
+            <input type="text" id="name" placeholder="Full Name" autocomplete="name" required>
+            <input type="email" id="email" placeholder="Email Address" autocomplete="email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" autocomplete="tel" required>
+            <input type="text" id="product" placeholder="Product Name" autocomplete="off" required>
+            <textarea id="message" placeholder="Type Your Enquiry" required></textarea>
             <button type="submit">Submit Enquiry</button>
         </form>
     </section>

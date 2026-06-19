@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home Page -->
+    <url>
+        <loc>https://www.idiDelites.com/index.html</loc>
+        <lastmod>2025-06-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- About Us Page -->
+    <url>
+        <loc>https://www.idiDelites.com/about.html</loc>
+        <lastmod>2025-06-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Products Page -->
+    <url>
+        <loc>https://www.idiDelites.com/products.html</loc>
+        <lastmod>2025-06-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Contact Information Page -->
+    <url>
+        <loc>https://www.idiDelites.com/contact.html</loc>
+        <lastmod>2025-06-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Enquiry Form Page -->
+    <url>
+        <loc>https://www.idiDelites.com/equiry.html</loc>
+        <lastmod>2025-06-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>
